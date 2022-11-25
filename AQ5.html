@@ -1,0 +1,53 @@
+<html>
+<head>
+<script src="jquery.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#flip").click(function(){
+$("#panel").slideDown();
+});
+$("#move").click(function(){
+$("#move1").animate({left: '500px'});
+});
+$("#fade").click(function(){
+$("#fade1").fadeIn(1000);
+});
+});
+</script>
+<style>
+#panel, #flip{
+padding:10px;
+text-align:left;
+background-color:blue;
+border:solid 5px purple;
+}
+#panel{
+padding:60px;
+display:none;
+}
+</style>
+</head>
+<body>
+<div id="flip">click here for slidDown</div>
+<div id="panel">merry christmas!</div>
+<br>
+<hr>
+<br>
+<button id="move">move the box!</button>
+<br>
+<br>
+<br>
+<div id="move1" style="background:red;height:70px;width:80px;;position:fixed;"></div>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<button id="fade">fadeIn box!</button>
+<br>
+<br>
+<div id="fade1" style="background:aqua;height:70px;width:80px;display:none;"></div>
+<hr>
+</body>
+</html>
