@@ -1,0 +1,11 @@
+<html>
+<body>
+<h2>click on the button to show popup</h2>
+<button onclick="myFunction()">Try it</button>
+<script>
+function myFunction(){
+confirm("press a button!");
+}
+</script>
+</body>
+</html>
