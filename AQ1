@@ -1,0 +1,24 @@
+<html>
+<head>
+<style>
+#selected{
+color:red;
+</style>
+</head>
+<body>
+<div id="selected">
+<p>red</p>
+<p>white</p>
+<p>green</p>
+<p>black</p>
+<p>blue</p>
+<p>orange</p>
+</div>
+<script src="jquery.js">
+</script>
+<script>
+var count=$("#selected p").length;
+document.writeln("total number of child="+count);
+</script>
+</body>
+</html>
