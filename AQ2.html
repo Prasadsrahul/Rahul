@@ -1,0 +1,24 @@
+<html>
+
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("p").bind("click",function(){
+$("<p>Single click event called</p>")
+.appendTo(".res");
+});
+$("p").bind("dblclick",function(){
+$("<p>Double click event called</p>")
+.appendTo(".res");
+
+});
+});
+</script>
+</head>
+<body>
+<p>Click me!</p>
+<div class="res"></div>
+</body>
+</html>
+
